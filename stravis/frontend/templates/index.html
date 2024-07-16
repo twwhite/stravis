@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Stravis - Strava Visualizer{% endblock %}
+{% block head %}
+    {{ super() }}
+
+{% endblock %}
+{% block content %}
+    <h1>Welcome!</h1>
+    <div hx-get="get-activities" hx-trigger="click">Click Me</div>
+
+    {% endblock %}
